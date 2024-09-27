@@ -1,0 +1,58 @@
+#imagen{
+    height: 600px;
+    width: 1400px;
+}
+
+body.jamie{
+    background: url("./static/gatos.jpg");
+    background-size: 100vw 100vh ;
+    background-repeat: no-repeat;
+  
+}
+
+.cajita {
+    text-align: center;
+    color: white;
+   
+}
+.otracajalol {
+    
+    text-align: center;
+    color: white;
+    
+    
+}
+
+#dios {
+    height: 379px;
+    width: 300px;
+    text-align: center;
+}
+
+
+
+body.peces {
+    background: url("./static/cielo.jpg");
+    background-size: 100vw 100vh ;
+    background-repeat: no-repeat;
+}
+
+body.gotas {
+    background: url("./static/chimu.jpg");
+    background-size: 100vw 100vh ;
+    background-repeat: no-repeat;
+     
+}
+
+#playlist {
+    
+    height: 200px;
+    width: 300px;
+
+}
+body.ultima {
+    background: url("./static/ranitas.jpg");
+    background-size: 100vw 100vh ;
+    background-repeat: no-repeat;
+}
+
