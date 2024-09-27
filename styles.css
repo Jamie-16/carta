@@ -1,57 +1,39 @@
-#imagen{
-    height: 600px;
-    width: 1400px;
+/* Para que la imagen abarque el 100% de la pantalla */
+#imagen {
+    height: 100vh; /* Altura al 100% del viewport height */
+    width: 100vw;  /* Ancho al 100% del viewport width */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
 }
 
-body.jamie{
-    background: url("./static/gatos.jpg");
-    background-size: 100% 100% ;
+/* Fondos de las clases específicas con background responsivo */
+body.jamie, body.peces, body.gotas, body.ultima {
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla manteniendo su proporción */
+    background-position: center;
     background-repeat: no-repeat;
 }
 
-.cajita {
+/* Ajustar cajitas para que mantengan el centrado */
+.cajita, .otracajalol {
     text-align: center;
     color: white;
-   
-}
-.otracajalol {
-    
-    text-align: center;
-    color: white;
-    
-    
 }
 
-#dios {
-    height: 379px;
-    width: 300px;
+/* Hacer responsivos otros elementos con porcentajes o unidades relativas */
+#dios, #playlist {
+    max-width: 100%; /* Ajusta el ancho máximo al 100% del contenedor padre */
+    height: auto; /* Mantiene la proporción de la imagen */
     text-align: center;
 }
 
+/* Media Queries para dispositivos más pequeños */
+@media (max-width: 768px) {
+    #imagen {
+        height: 100vh; /* Ajuste para pantallas pequeñas */
+        width: 100vw;
+    }
 
-
-body.peces {
-    background: url("./static/cielo.jpg");
-    background-size: 100% 100% ;
-    background-repeat: no-repeat;
+    #dios, #playlist {
+        width: 80%; /* Ajuste en pantallas pequeñas */
+        height: auto;
+    }
 }
-
-body.gotas {
-    background: url("./static/chimu.jpg");
-    background-size: 100% 100% ;
-    background-repeat: no-repeat;
-     
-}
-
-#playlist {
-    
-    height: 200px;
-    width: 300px;
-
-}
-body.ultima {
-    background: url("./static/ranitas.jpg");
-    background-size: 100% 100% ;
-    background-repeat: no-repeat;
-}
-
