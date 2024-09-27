@@ -1,39 +1,57 @@
-/* Para que la imagen abarque el 100% de la pantalla */
-#imagen {
-    height: 100vh; /* Altura al 100% del viewport height */
-    width: 100vw;  /* Ancho al 100% del viewport width */
-    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+#imagen{
+    height: 600px;
+    width: 1400px;
 }
 
-/* Fondos de las clases específicas con background responsivo */
-body.jamie, body.peces, body.gotas, body.ultima {
-    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla manteniendo su proporción */
-    background-position: center;
+body.jamie{
+    background: url("./static/gatos.jpg");
+    background-size: 100vw 100vh ;
+    background-repeat: no-repeat;
+  
+}
+
+.cajita {
+    text-align: center;
+    color: white;
+   
+}
+.otracajalol {
+    
+    text-align: center;
+    color: white;
+    
+    
+}
+
+#dios {
+    height: 379px;
+    width: 300px;
+    text-align: center;
+}
+
+
+
+body.peces {
+    background: url("./static/cielo.jpg");
+    background-size: 100vw 100vh ;
     background-repeat: no-repeat;
 }
 
-/* Ajustar cajitas para que mantengan el centrado */
-.cajita, .otracajalol {
-    text-align: center;
-    color: white;
+body.gotas {
+    background: url("./static/chimu.jpg");
+    background-size: 100vw 100vh ;
+    background-repeat: no-repeat;
+     
 }
 
-/* Hacer responsivos otros elementos con porcentajes o unidades relativas */
-#dios, #playlist {
-    max-width: 100%; /* Ajusta el ancho máximo al 100% del contenedor padre */
-    height: auto; /* Mantiene la proporción de la imagen */
-    text-align: center;
+#playlist {
+    
+    height: 200px;
+    width: 300px;
+
 }
-
-/* Media Queries para dispositivos más pequeños */
-@media (max-width: 768px) {
-    #imagen {
-        height: 100vh; /* Ajuste para pantallas pequeñas */
-        width: 100vw;
-    }
-
-    #dios, #playlist {
-        width: 80%; /* Ajuste en pantallas pequeñas */
-        height: auto;
-    }
+body.ultima {
+    background: url("./static/ranitas.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
